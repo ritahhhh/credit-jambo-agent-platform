@@ -1,0 +1,239 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* Credit Jambo Brand Colors */
+  --brand-primary: #00B050;
+  --brand-accent: #0ACB8B;
+  --brand-mint: #74DCBA;
+  --brand-dark-green: #008F40;
+  
+  /* Base Colors */
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  
+  /* Primary (Green Theme) */
+  --primary: #00B050;
+  --primary-foreground: #ffffff;
+  --primary-hover: #008F40;
+  
+  /* Secondary (Accent Green) */
+  --secondary: #0ACB8B;
+  --secondary-foreground: #ffffff;
+  
+  /* Muted & Accents */
+  --muted: #f5f5f5;
+  --muted-foreground: #666666;
+  --accent: #74DCBA;
+  --accent-foreground: #1a1a1a;
+  
+  /* Status Colors */
+  --success: #00B050;
+  --warning: #FFA500;
+  --destructive: #DC2626;
+  --destructive-foreground: #ffffff;
+  --pending: #F59E0B;
+  
+  /* UI Elements */
+  --border: #e5e5e5;
+  --input: #e5e5e5;
+  --input-background: #ffffff;
+  --switch-background: #cbced4;
+  --ring: #00B050;
+  
+  /* Chart Colors (Green theme) */
+  --chart-1: #00B050;
+  --chart-2: #0ACB8B;
+  --chart-3: #74DCBA;
+  --chart-4: #008F40;
+  --chart-5: #05E89D;
+  
+  /* Typography */
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  
+  /* Border Radius */
+  --radius: 0.75rem;
+  
+  /* Sidebar */
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1a1a1a;
+  --sidebar-primary: #00B050;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f5f5f5;
+  --sidebar-accent-foreground: #1a1a1a;
+  --sidebar-border: #e5e5e5;
+  --sidebar-ring: #00B050;
+}
+
+.dark {
+  /* Base Colors */
+  --background: #0a0a0a;
+  --foreground: #fafafa;
+  --card: #1a1a1a;
+  --card-foreground: #fafafa;
+  --popover: #1a1a1a;
+  --popover-foreground: #fafafa;
+  
+  /* Primary (Green Theme) */
+  --primary: #00B050;
+  --primary-foreground: #ffffff;
+  --primary-hover: #0ACB8B;
+  
+  /* Secondary */
+  --secondary: #0ACB8B;
+  --secondary-foreground: #ffffff;
+  
+  /* Muted & Accents */
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
+  --accent: #74DCBA;
+  --accent-foreground: #0a0a0a;
+  
+  /* Status Colors */
+  --success: #00B050;
+  --warning: #FFA500;
+  --destructive: #DC2626;
+  --destructive-foreground: #ffffff;
+  --pending: #F59E0B;
+  
+  /* UI Elements */
+  --border: #333333;
+  --input: #333333;
+  --input-background: #1a1a1a;
+  --ring: #00B050;
+  
+  /* Chart Colors */
+  --chart-1: #00B050;
+  --chart-2: #0ACB8B;
+  --chart-3: #74DCBA;
+  --chart-4: #008F40;
+  --chart-5: #05E89D;
+  
+  /* Sidebar */
+  --sidebar: #1a1a1a;
+  --sidebar-foreground: #fafafa;
+  --sidebar-primary: #00B050;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #262626;
+  --sidebar-accent-foreground: #fafafa;
+  --sidebar-border: #333333;
+  --sidebar-ring: #00B050;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-family);
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}

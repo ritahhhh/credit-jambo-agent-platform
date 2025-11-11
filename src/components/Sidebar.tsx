@@ -19,7 +19,7 @@ export function Sidebar({ currentPage, onNavigate }: SidebarProps) {
   return (
     <aside className="w-64 border-r border-border bg-card h-screen flex flex-col">
       <div className="p-6 border-b border-border">
-        <h1 className="text-primary">Credit Jambo</h1>
+        <h1 className="text-primary">WalletIQ</h1>
         <p className="text-muted-foreground text-sm mt-1">Agent Wallet</p>
       </div>
       

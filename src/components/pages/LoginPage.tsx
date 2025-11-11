@@ -23,9 +23,9 @@ export function LoginPage({ onLogin }: LoginPageProps) {
       <Card className="w-full max-w-md shadow-xl">
         <CardHeader className="text-center space-y-2">
           <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-2">
-            <span className="text-white">CJ</span>
+            <span className="text-white">Wi</span>
           </div>
-          <CardTitle className="text-primary">Credit Jambo</CardTitle>
+          <CardTitle className="text-primary">WalletIQ</CardTitle>
           <CardDescription>Agent Wallet & Merchant Management</CardDescription>
         </CardHeader>
         <CardContent>
